@@ -1,5 +1,5 @@
 # react-mvc
-MVC library for React
+MVC library for React and React-Native
 
 This package is a very tiny framework to help react developers to use MVC with react and TypeScript.
 

@@ -1,6 +1,6 @@
 {
   "name": "@dipacs/react-mvc",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "MVC Framework for React",
   "main": "lib/index.js",
   "repository": {
@@ -13,13 +13,10 @@
   "author": "dipacs",
   "license": "Apache-2.0",
   "dependencies": {
-    "react": "^16.3.2"
+    "react": "^16.4.2"
   },
   "devDependencies": {
-    "@types/react": "^16.3.12",
-    "source-map-loader": "^0.2.3",
-    "ts-loader": "^4.2.0",
-    "typescript": "^2.8.3",
-    "webpack": "^4.6.0"
+    "@types/react": "^16.4.7",
+    "typescript": "^2.8.3"
   }
 }

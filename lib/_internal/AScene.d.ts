@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import * as React from 'react';
 import { AController } from "./AController";
 import { IRenderer } from "./IRenderer";

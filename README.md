@@ -7,10 +7,10 @@ This package is a very tiny framework to help react developers to use MVC with r
 
 ### Model
 The model is a bounch of classes which contains the data for the UI. DO NOT mix and match the model with the data. The data is what you get from your backend 
-throught a web service. This is ALLWAYS a different layer and it's controller's responsibility to convert the data to model and backward.
+throught a web service. This is ALWAYS a different layer and it's the controller's responsibility to convert the data to model and backward.
 
 ### View
-The view's responsible to render the UI based on the given model, and nothing more. No data conversion, no business logic. Just rendering based on the given model.
+The view is responsible to render the UI based on the given model, and nothing more. No data conversion, no business logic. Just rendering based on the given model.
 
 ### Controller
 The controller is the glue between the View and the business logic (or webservice). The controller is responsible to communicate with the webserver

@@ -4,7 +4,7 @@ import { IRenderer } from "./IRenderer";
 
 
 export abstract class AScene<$Props, $Model, $Controller extends AController<$Model>> 
-        extends React.Component<$Props, $Model> implements IRenderer<$Model> {
+        extends React.Component<$Props, SceneState<$Model>> implements IRenderer<$Model> {
 
     private _controller: $Controller;
     private _model: $Model;
@@ -13,7 +13,7 @@ export abstract class AScene<$Props, $Model, $Controller extends AController<$Mo
         super(props);
         this._controller = this.createControlller();
         this._model = this._controller.init(this);
-        this.state = this._model;
+        this.state = {version: 0};
     }
 
     protected get controller() {
@@ -26,11 +26,15 @@ export abstract class AScene<$Props, $Model, $Controller extends AController<$Mo
 
     public renderScene(model: $Model) {
         this._model = model;
-        this.setState(model);
+        this.setState({version: this.state.version + 1});
     }
 
     protected abstract createControlller(): $Controller;
 
     public abstract render(): React.ReactNode;
 
+}
+
+export class SceneState<$Model> {
+    public version: number;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@dipacs/react-mvc",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "MVC Framework for React and React Native",
   "keywords": ["react", "react-native", "mvc"],
   "main": "lib/index.js",

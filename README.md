@@ -29,7 +29,7 @@ In this small getting started tutorial we are creating a very simple click count
 
 It's easy using the npm package manager
 
-    npm install --save @dipacs/react-mvc
+    npm install --save @eagerlogic/react-mvc
     
 
 ## Create a model object
@@ -54,7 +54,7 @@ In our case this function called: onButtonClicked. The full code of the controll
 
 mainscene/MainController.ts
 ```
-import {AController} from '@dipacs/react-mvc';
+import {AController} from '@eagerlogic/react-mvc';
 import { MainModel } from './MainModel';
 
 export class MainController extends AController<MainModel> {
@@ -79,7 +79,7 @@ You also need to implement the render method, to render the UI. In our example t
 mainscene/MainScene.tsx
 ```
 import { MainModel } from "./MainModel";
-import { AScene } from "@dipacs/react-mvc";
+import { AScene } from "@eagerlogic/react-mvc";
 import { MainController } from "./MainController";
 import * as React from 'react';
 

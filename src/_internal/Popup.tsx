@@ -17,7 +17,7 @@ export class Popup extends React.Component<PopupProps, any> {
     public render() {
         return (
             <div style={this.createFadeStyle()} onClick={this.onFadeClicked}>
-                <div style={{ display: "table", width: "100%", minHeight: "100%" }}>
+                <div style={{ display: "table", width: "100%", minHeight: "100%", height: '100%' }}>
 
                     <div style={{ display: "table-row", height: "40px" }}>
                         <div style={{ display: "table-cell" }}>

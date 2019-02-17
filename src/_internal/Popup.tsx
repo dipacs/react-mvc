@@ -28,7 +28,7 @@ export class Popup extends React.Component<PopupProps, any> {
                     <div style={{ display: "table-row" }}>
                         <div style={{ display: "table-cell", textAlign: "center", verticalAlign: "middle" }}>
                             <div style={{ display: "inline-block" }}>
-                                <div style={{ display: 'inline-block' }} onClick={(e) => {e.stopPropagation();}}>
+                                <div style={{ display: 'inline-block', textAlign: 'left' }} onClick={(e) => {e.stopPropagation();}}>
                                     {this.props.children}
                                 </div>
                             </div>

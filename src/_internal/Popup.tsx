@@ -55,7 +55,7 @@ export class Popup extends React.Component<PopupProps, any> {
             top: "0px",
             right: "0px",
             bottom: "0px",
-            zIndex: 10000,
+            zIndex: this.props.zIndex ? this.props.zIndex : 10000,
         };
     }
 
@@ -63,5 +63,6 @@ export class Popup extends React.Component<PopupProps, any> {
 
 export class PopupProps {
     public fadeColor?: string;
+    public zIndex?: number;
     public onFadeClicked?: () => void;
 }

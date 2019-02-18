@@ -7,5 +7,6 @@ export declare class Popup extends React.Component<PopupProps, any> {
 }
 export declare class PopupProps {
     fadeColor?: string;
+    zIndex?: number;
     onFadeClicked?: () => void;
 }

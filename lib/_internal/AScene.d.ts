@@ -5,8 +5,8 @@ export declare abstract class AScene<$Props, $Model, $Controller extends AContro
     private _controller;
     private _model;
     constructor(props: $Props);
-    protected readonly controller: $Controller;
-    protected readonly model: $Model;
+    protected get controller(): $Controller;
+    protected get model(): $Model;
     renderScene(model: $Model): void;
     protected abstract createControlller(): $Controller;
     abstract render(): React.ReactNode;

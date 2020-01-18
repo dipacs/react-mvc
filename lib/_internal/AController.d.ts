@@ -5,6 +5,7 @@ export declare abstract class AController<$Model> {
     constructor();
     protected readonly model: $Model;
     protected render(model: $Model): void;
-    init(renderer: IRenderer<$Model>): $Model;
+    __init__(renderer: IRenderer<$Model>): $Model;
+    init(): void;
     protected abstract createInitialModel(): $Model;
 }

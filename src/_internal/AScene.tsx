@@ -12,7 +12,7 @@ export abstract class AScene<$Props, $Model, $Controller extends AController<$Mo
     constructor(props: $Props) {
         super(props);
         this._controller = this.createControlller();
-        this._model = this._controller.init(this);
+        this._model = this._controller.__init__(this);
         this.state = {version: 0};
     }
 

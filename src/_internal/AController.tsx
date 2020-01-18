@@ -19,14 +19,19 @@ export abstract class AController<$Model> {
         this._renderer.renderScene(model);
     }
 
-    public init(renderer: IRenderer<$Model>): $Model {
+    public __init__(renderer: IRenderer<$Model>): $Model {
         if (renderer == null) {
             throw new Error('The renderer parameter can not be null!');
         }
 
         this._renderer = renderer;
         this._model = this.createInitialModel();
+        window.setTimeout(() => {this.init()}, 0)
         return this._model;
+    }
+
+    public init() {
+
     }
 
     protected abstract createInitialModel(): $Model;

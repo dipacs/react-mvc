@@ -1,27 +1,27 @@
 {
-  "name": "@eagerlogic/react-mvc",
-  "version": "1.1.11",
-  "description": "MVC Framework for React and React Native",
-  "keywords": [
-    "react",
-    "typescript",
-    "mvc"
-  ],
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dipacs/react-mvc"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "dipacs",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "react": "^16.4.2"
-  },
-  "devDependencies": {
-    "@types/react": "^16.4.7",
-    "typescript": "^2.8.3"
-  }
+    "name": "@eagerlogic/react-mvc",
+    "version": "1.2.1",
+    "description": "MVC Framework for React and React Native",
+    "keywords": [
+        "react",
+        "typescript",
+        "mvc"
+    ],
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dipacs/react-mvc"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "dipacs",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "react": "^16.4.2"
+    },
+    "devDependencies": {
+        "@types/react": "^16.4.7",
+        "typescript": "^2.8.3"
+    }
 }
